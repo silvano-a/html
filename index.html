@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Silvano's journey of rediscovering HTML and CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Silvano's journey of rediscovering HTML">
+    <meta name="keywords" content="HTML, journey, rediscovering, Silvano">
+    <!-- link main.css -->
+    <link rel="stylesheet" href="./assets/styling/main.css">
+    <link rel="stylesheet" href="./assets/styling/layout.css">
+    <link rel="stylesheet" href="./assets/styling/homepage.css">
+    <link rel="stylesheet" href="./assets/styling/anim_reverse.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/dark.min.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css" media="(prefers-color-scheme: light)">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+</head>
+<body>
+    <!--
+    the main tags represent the dominant content in the <body of a document.
+    the content area consists of content directly related to the topic.
+
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/main
+    -->
+<main>
+    <!--
+    the article tags represent a self-contained composition in a document, page, application, or site.
+    an article should be independently distributable or reusable, e.g., in syndication.
+    -->
+    <article>
+        <!--
+        the article tags represent a self-contained composition in a document, page, application, or site.
+        an article should be independently distributable or reusable, e.g., in syndication.
+
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/footer
+        -->
+        <header>
+            <h1>Silvano's journey of rediscovering HTML and CSS</h1>
+        </header>
+
+        <p>Welcome to my journey of rediscovering HTML and CSS. This is a simple page to showcase my learning process.
+            The entire page will be constructed on HTML, CSS, and Javascript. The only package used is the code highlighting package:
+            <a href="https://highlightjs.org/"><q>highlightJS</q></a></p>
+
+        <p>The purpose of this page is to test, showcase, and inspire to go back to native browser support functionality
+            in hopes that this might combat javascript / framework bloating.
+        </p>
+    </article>
+
+    <article>
+        <!--
+        the article tags represent a self-contained composition in a document, page, application, or site.
+        an article should be independently distributable or reusable, e.g., in syndication.
+
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/footer
+        -->
+        <header>
+            <h1>The document top layer</h1>
+        </header>
+
+        <p>We've all been there. A modal or dialog is needed. it needs to appear over all other content. In the end we
+        end up with applying a ridiculous z-index to make sure nothing will be on top of the modal.</p>
+        <p>Well, the solution is simple. The <code>dialog</code> element is the answer. It is a native HTML element which
+        is made specifically for the usecase of popovers and dialogs</p>
+
+        <footer>
+            <a href="toplayer.html">Read more</a>
+            <figure>
+                <figcaption>My rating</figcaption>
+
+                <figure>
+                    <figure>
+                        <figcaption>usefulness</figcaption>
+                        <meter  min="0" max="100" low="33" high="66" optimum="80" value="100"></meter>
+                    </figure>
+
+                    <figure>
+                        <figcaption>recommended use</figcaption>
+                        <meter min="0" max="100" low="33" high="66" optimum="80" value="100"></meter>
+                    </figure>
+
+                    <figure>
+                        <figcaption>ease of use</figcaption>
+                        <meter min="0" max="100" low="33" high="66" optimum="80" value="90"></meter>
+                    </figure>
+
+                    <figure>
+                        <figcaption>availability</figcaption>
+                        <meter min="0" max="100" low="33" high="66" optimum="80" value="80"></meter>
+                    </figure>
+                </figure>
+            </figure>
+        </footer>
+    </article>
+
+    <article>
+        <!--
+        the article tags represent a self-contained composition in a document, page, application, or site.
+        an article should be independently distributable or reusable, e.g., in syndication.
+
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/footer
+        -->
+        <header>
+            <h1>Custom HTML elements</h1>
+        </header>
+
+
+        <footer>
+            <a href="custom_element.html">Read more</a>
+            <figure>
+                <figcaption>My rating</figcaption>
+
+                <figure>
+                    <figure>
+                        <figcaption>usefulness</figcaption>
+                        <meter  min="0" max="100" low="33" high="66" optimum="80" value="100"></meter>
+                    </figure>
+
+                    <figure>
+                        <figcaption>recommended use</figcaption>
+                        <meter min="0" max="100" low="33" high="66" optimum="80" value="50"></meter>
+                    </figure>
+
+                    <figure>
+                        <figcaption>ease of use</figcaption>
+                        <meter min="0" max="100" low="33" high="66" optimum="80" value="30"></meter>
+                    </figure>
+
+                    <figure>
+                        <figcaption>availability</figcaption>
+                        <meter min="0" max="100" low="33" high="66" optimum="80" value="85"></meter>
+                    </figure>
+                </figure>
+            </figure>
+        </footer>
+    </article>
+
+
+</main>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+</html>
