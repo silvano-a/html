@@ -1,0 +1,52 @@
+body,menu,li  { margin: 0; padding: 0; }
+goedemiddag-menu {
+    display: block;
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--tertiary-grey-tone);
+    color: var(--text-color);
+
+    li {
+        list-style: none;
+        line-height: 3rem;
+        padding: 0 1rem;
+    }
+
+    #desktop-menu {
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+
+        li {
+            display: inline-block;
+        }
+    }
+
+
+    aside {
+        display: none;
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+
+        position: absolute;
+        right: 0;
+
+
+        dialog {
+            position: absolute;
+            width: 100%;
+            max-width: 300px;
+            border: none;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            inset: unset;
+            right: 0;
+            top: 0;
+            height: 100%;
+        }
+    }
+}

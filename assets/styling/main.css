@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@view-transition {
+    navigation: auto;
+}
+
+:root {
+    /**
+      * light dark will use the system preference defined by the browser and user.
+      * we can define colors for light and dark mode and load dynamically.
+     */
+    color-scheme: light dark;
+    --primary-grey-tone: light-dark(
+        #fdfdfd,
+        #1a1a1a
+    ););
+
+    --secondary-grey-tone: light-dark(
+        #3a3a3a,
+        #d0d0d0
+    );
+
+    --tertiary-grey-tone: light-dark(
+        #f0f0f0,
+        #666666
+    );
+
+    --primary-highlight-tone: light-dark(
+        #2378cb,
+        #2a2d7f
+    );
+    --primary-highlight-text-tone: light-dark(
+        #a1c8ef,
+        #9899b8
+    );
+
+    --code-background-color: light-dark(
+        #f0f0f0,
+        #333333
+    );
+
+    --background-color: var(--primary-grey-tone);
+    --text-color: var(--secondary-grey-tone);
+    --border-color: var(--tertiary-grey-tone);
+
+    font-size: 1.3rem;
+}
+
+@keyframes move-out {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes move-in {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin-bottom: 20rem;
+}
+
+figure {
+    margin: 0;
+    padding: 1rem 0;
+}

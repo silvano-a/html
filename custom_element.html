@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Silvano's journey of rediscovering HTML and CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Silvano's journey of rediscovering HTML">
+    <meta name="keywords" content="HTML, journey, rediscovering, Silvano">
+    <!-- link main.css -->
+    <link rel="stylesheet" href="./assets/styling/main.css">
+    <link rel="stylesheet" href="./assets/styling/layout.css">
+    <link rel="stylesheet" href="./assets/styling/anim.css">
+    <link rel="stylesheet" href="./assets/styling/custom_nav.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/dark.min.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css" media="(prefers-color-scheme: light)">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+    <script src="https://silvano-a.github.io/html/assets/elements/goedemiddag-nav.js"></script>
+
+</head>
+<body>
+<!--
+the main tags represent the dominant content in the <body of a document.
+the content area consists of content directly related to the topic.
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/main
+-->
+<main>
+    <!--
+    the article tags represent a self-contained composition in a document, page, application, or site.
+    an article should be independently distributable or reusable, e.g., in syndication.
+    -->
+    <article>
+        <!--
+        the article tags represent a self-contained composition in a document, page, application, or site.
+        an article should be independently distributable or reusable, e.g., in syndication.
+
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/footer
+        -->
+        <header>
+            <h1>Discovering: Custom HTML elements</h1>
+            <a href="./index.html">Back</a>
+        </header>
+
+
+        Let's create a custom nav element!
+
+        <goedemiddag-menu>
+            <menu>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </menu>
+        </goedemiddag-menu>
+
+        <footer>
+            <a href="index.html">Back</a>
+            <figure>
+                <figcaption>My rating</figcaption>
+
+                <figure>
+                    <figure>
+                        <figcaption>usefulness</figcaption>
+                        <meter  min="0" max="100" low="33" high="66" optimum="80" value="100"></meter>
+                    </figure>
+
+                    <figure>
+                        <figcaption>recommended use</figcaption>
+                        <meter min="0" max="100" low="33" high="66" optimum="80" value="100"></meter>
+                    </figure>
+
+                    <figure>
+                        <figcaption>ease of use</figcaption>
+                        <meter min="0" max="100" low="33" high="66" optimum="80" value="90"></meter>
+                    </figure>
+
+                    <figure>
+                        <figcaption>availability</figcaption>
+                        <meter min="0" max="100" low="33" high="66" optimum="80" value="80"></meter>
+                    </figure>
+                </figure>
+            </figure>
+        </footer>
+    </article>
+
+</main>
+<script>
+    hljs.highlightAll();
+</script>
+
+</body>
+</html>
